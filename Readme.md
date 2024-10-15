@@ -34,7 +34,8 @@ For Server: Run "npm start"
 
 For Client: Run "npm run dev"
 
-Note: If you have concurrently installed globally, you can use npm run dev from the root directly to start both the client and the server in a single command
+Note: If you have concurrently installed globally, you can use "npm run dev"
+from the root directly to start both the client and the server in a single command
 
 Enjoy the Game! 🎲
 ```
