@@ -1,16 +1,35 @@
-<!-- client/index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dice Roll Betting Game</title>
   </head>
   <body>
-    <div id="gameStartDiv">
-      <h1>Dice Roll Betting Game</h1>
-      <button id="startGame">Start Game</button>
-    </div>
-    <canvas id="gameCanvas"></canvas>
-    <script type="module" src="./main.js"></script>
+    <header>
+      <p>Phaser | Dice Roll Betting Game</p>
+    </header>
+    <main>
+      <canvas id="gameCanvas"></canvas>
+
+      <div id="gameStartDiv" class="gameUI">
+        <h1>Dice Roll Betting Game</h1>
+        <p>Bet on a number between 1 and 6, and roll the dice!</p>
+        <p>If you bet on the correct number, you win.</p>
+        <button id="gameStartBtn"><p>Start</p></button>
+      </div>
+
+      <div id="gameEndDiv" class="gameUI">
+        <p>Game Over</p>
+        <h1>You <span id="gameWinLoseSpan"></span></h1>
+        <h1>Final Score: <span id="gameEndScoreSpan"></span></h1>
+        <p>Refresh the Page to play again.</p>
+      </div>
+    </main>
+    <footer>
+      <p>Created By PK 2024 🎲</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -7,7 +7,6 @@ app.use(express.json());
 
 let gameState = {
   diceResult: null,
-  bets: [],
 };
 
 // @GET - Roll the dice
@@ -19,9 +18,9 @@ app.get('/api/roll-dice', (req, res) => {
 
 // @POST - Place a bet
 app.post('/api/place-bet', (req, res) => {
-  const { user, amount, guess } = req.body;
+  const { guess } = req.body;
+  console.log('Bet placed:', guess);
   const betResult = guess === gameState.diceResult;
-  gameState.bets.push({ user, amount, guess, betResult });
   res.json({ betResult, diceResult: gameState.diceResult });
 });
 
