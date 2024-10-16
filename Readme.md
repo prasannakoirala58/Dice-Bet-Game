@@ -26,7 +26,7 @@ Make sure you have [Node.js](https://nodejs.org/) (Version 14 or higher) and [np
 ```bash
 clone this repo
 
-cd dice-bet-game
+cd Dice-Bet-Game
 
 npm install in both client and server
 
