@@ -164,7 +164,8 @@ class GameScene extends Phaser.Scene {
     this.scoreText.setText(`Score: ${score}`);
     gameEndScoreSpan.textContent = score;
 
-    if (score >= 1) {
+    if (score >= 3) {
+      // After the score reaches 3, the game ends
       this.endGame();
     }
   }
